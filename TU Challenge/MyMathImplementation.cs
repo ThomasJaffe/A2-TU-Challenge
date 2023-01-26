@@ -14,19 +14,19 @@ namespace TU_Challenge
             {
                 throw new ArgumentException();
             }
-            else if (x > 100)
+            else if (x >= 150)
             {
                 throw new ArgumentException();
             }
             else
             {
-                if (x > 18)
+                if (x >= 18)
                 {
-                    return false;
+                    return true;
                 }
                 else
                 {
-                    return true;
+                    return false;
                 }
             }
         }
@@ -68,7 +68,7 @@ namespace TU_Challenge
         }
 
         public static int Power2(int x) {
-            return x ^ 2;
+            return x * x;
         }
 
         public static int Power(int x, int y) { 
